@@ -1,0 +1,18 @@
+#include "resource.h"
+
+IDR_MENU MAINMENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Import DXF...", IDM_IMPORT
+        MENUITEM "Setup Params...", IDM_SETUP
+        MENUITEM "Generate Toolpath", IDM_GENERATE
+        MENUITEM "Export G-Code...", IDM_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit", IDM_EXIT
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About", IDM_ABOUT
+    END
+END
